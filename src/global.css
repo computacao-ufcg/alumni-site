@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
 body {
   font: 400 14px Roboto, sans-serif;
   background: #FCFFED;

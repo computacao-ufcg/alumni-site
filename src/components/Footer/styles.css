@@ -1,0 +1,31 @@
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  margin-bottom: 16px;
+  margin-left: 40px;
+  font-size: 17px;
+}
+
+.social-icons {
+  position: fixed;
+  right: 0;
+  margin-right: 60px;
+  bottom: 15px;
+}
+
+.home__social-icon {
+  width: max-content;
+  font-size: 30px;
+  color: black;
+  margin-left: 10px;
+}
+
+.home__social-icon:hover {
+  color: blue;
+}
