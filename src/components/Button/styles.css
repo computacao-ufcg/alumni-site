@@ -1,0 +1,13 @@
+button {
+    height: 46px;
+    width: 216px;
+    font-size: 20px;
+    color: white;
+    background-color: var(--color-secundary-lighter);
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--color-secundary-dark);
+}
