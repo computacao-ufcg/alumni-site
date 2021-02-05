@@ -10,4 +10,5 @@ button {
 
 button:hover {
     background-color: var(--color-secundary-dark);
+    cursor:pointer;
 }
