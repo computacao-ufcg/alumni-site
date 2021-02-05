@@ -3,6 +3,6 @@ import './styles.css';
 
 export default function Button() {
     return (
-        <button>Participe</button>
+        <button className="yellow-button">Participe</button>
     )
 }

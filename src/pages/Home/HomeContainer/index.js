@@ -6,7 +6,7 @@ import './styles.css';
 export default function HomeContainer() {
     return (
         <div id="content">
-                <div id="info">
+                <div className="info">
                     <h1>Seja <br/> bem-vindo</h1>
 
                     <p>
