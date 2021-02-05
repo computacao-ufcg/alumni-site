@@ -6,6 +6,12 @@
   background: #FCFFED;
 }
 
+.image-section img {
+  margin-left: 20px;
+  width: 350px;
+  height: 80px;
+}
+
 .topics-section {
   max-width: 100%;
   position: relative;

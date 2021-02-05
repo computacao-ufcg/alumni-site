@@ -15,8 +15,8 @@ function Header() {
         <nav className="topics-section">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Tutorial</a></li>
-            <li><a href="#">Saiba mais</a></li>
+            <li><a href="#">Participe</a></li>
+            <li><a href="#">Convide</a></li>
           </ul>
         </nav>
       </header>
