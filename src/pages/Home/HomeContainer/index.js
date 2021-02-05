@@ -24,17 +24,17 @@ export default function HomeContainer() {
                 <div id="data">
                     <img src={SearchImg} alt="search"></img>
                     <div id="statistics"> 
-                        <div>
+                        <div id="first">
                             <h3>100</h3>
                             <p>Egressos cadastrados</p>
                         </div>
-                        <div>
-                            <h3>100</h3>
-                            <p>Egressos cadastrados</p>
+                        <div id="second">
+                            <h3>300</h3>
+                            <p>alunos formados no ultimo ano</p>
                         </div>
-                        <div>
-                            <h3>100</h3>
-                            <p>Egressos cadastrados</p>
+                        <div id="third">
+                            <h3>40</h3>
+                            <p>anos de historia</p>
                         </div>
                         
                     </div>
