@@ -7,13 +7,15 @@ import {
 
 import './global.css';
 
+import Home from './pages/Home';
+
 function App() {
   return (
     <Router>
       <div className="App">
         <Switch>
-          {/* <Route path="" exact component={ } />
-          <Route path="" exact component={ } /> */}
+          <Route path="/home" exact component={ Home } />
+          {/* <Route path="/tutorial" exact component={ } /> */}
         </Switch>
       </div>
     </Router>
