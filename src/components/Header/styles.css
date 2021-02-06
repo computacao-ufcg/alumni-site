@@ -15,18 +15,26 @@
 .topics-section {
   max-width: 100%;
   position: relative;
-  left: 650px;
+  left: 800px;
 }
 
 .topics-section ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 18px;
+}
+
+.topics-section ul {
+  gap: 30px;
 }
 
 .topics-section ul li a {
   color: inherit;
   text-decoration: none;
   font-size: 19px;
+}
+
+.topics-section ul li a:hover {
+  color: #6AA8CA;
+  text-decoration: underline;
 }
