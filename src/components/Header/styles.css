@@ -3,6 +3,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: #FCFFED;
 }
 
@@ -15,7 +16,7 @@
 .topics-section {
   max-width: 100%;
   position: relative;
-  left: 800px;
+  margin-right: 80px;
 }
 
 .topics-section ul {

@@ -4,6 +4,7 @@
   bottom: 0;
   left: 0;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 
@@ -14,9 +15,7 @@
 }
 
 .social-icons {
-  margin: 0 auto;
-  margin-left: 780px;
-  justify-content: right;
+  margin-right: 80px;
 }
 
 .home__social-icon {
