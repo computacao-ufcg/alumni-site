@@ -1,8 +1,6 @@
-import React from 'react';
-import './styles.css';
+import React from "react";
+import "./styles.css";
 
 export default function Button() {
-    return (
-        <button className="yellow-button">Participe</button>
-    )
+  return <button className='yellow-button'>Participe</button>;
 }
