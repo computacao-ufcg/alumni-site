@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #FCFFED;
+  background: #fcffed;
 }
 
 .image-section img {
@@ -36,6 +36,6 @@
 }
 
 .topics-section ul li a:hover {
-  color: #6AA8CA;
+  color: #6aa8ca;
   text-decoration: underline;
 }

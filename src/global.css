@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
 
 :root {
-  --color-background: #FCFFED;
-  --color-secundary-lighter: #F9A826;
+  --color-background: #fcffed;
+  --color-secundary-lighter: #f9a826;
   --color-secundary-dark: #f48400;
-  --color-primary-lighter: #6AA8CA;
-  --color-primary-dark: #1D3292;
-  --color-line-in-grey: #C4C4C4;
+  --color-primary-lighter: #6aa8ca;
+  --color-primary-dark: #1d3292;
+  --color-line-in-grey: #c4c4c4;
 }
 
 * {
@@ -16,12 +16,14 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 
 body {
   font: 400 14px Roboto, sans-serif;
-  background: #FCFFED;
+  background: #fcffed;
   -webkit-font-smoothing: antialiased;
 }

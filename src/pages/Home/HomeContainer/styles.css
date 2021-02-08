@@ -1,75 +1,75 @@
 #content {
-    width: 95%;
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    margin: 40px;
+  width: 95%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  margin: 40px;
 }
 
- #content .info {
-    width: 55vw;
- }
+#content .info {
+  width: 55vw;
+}
 
- #content #data {
-    width: 45vw;
-    display: flex;
-    flex-direction:column;
-    align-items: center 
- }
+#content #data {
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 #statistics {
-     width: 100%;
-     height: 20%;
-     display: flex;  
- }
+  width: 100%;
+  height: 20%;
+  display: flex;
+}
 
- #statistics div {
-     margin-left: 5vw;
- }
+#statistics div {
+  margin-left: 5vw;
+}
 
- #statistics #first {
-     margin-top: -5vh;
-     width: 10%;
- }
- #statistics #second {
-    margin-top: 9vh;
-    width: 20%;
+#statistics #first {
+  margin-top: -5vh;
+  width: 10%;
+}
+#statistics #second {
+  margin-top: 9vh;
+  width: 20%;
 }
 
 #statistics #second h3 {
-    font-size: 45px;
+  font-size: 45px;
 }
 
-#statistics #third{
-    margin-top: 3vh;
-    width: 20%;
+#statistics #third {
+  margin-top: 3vh;
+  width: 20%;
 }
 
- #statistics h3 {
-     color: var(--color-primary-dark);
-     font-weight: bold;
-     font-size: 36px;
- }
+#statistics h3 {
+  color: var(--color-primary-dark);
+  font-weight: bold;
+  font-size: 36px;
+}
 
 #statistics p {
-     font-size: 18px;
-     font-weight: 300;
+  font-size: 18px;
+  font-weight: 300;
 }
 
- #content .vertical-line {
-    border-left: 4px solid var(--color-line-in-grey);
-    height: 60vh;
- }
+#content .vertical-line {
+  border-left: 4px solid var(--color-line-in-grey);
+  height: 60vh;
+}
 
- #content .info h1 {
-     color: var(--color-primary-lighter);
-     font-size: 94px;
-     font-weight:bold;
- }
+#content .info h1 {
+  color: var(--color-primary-lighter);
+  font-size: 94px;
+  font-weight: bold;
+}
 
- #content .info p {
-     font-size: 24px;
-     font-weight: 300;
-     margin-bottom: 30px;
-     width: 30vw;
- }
+#content .info p {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  width: 30vw;
+}
