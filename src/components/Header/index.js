@@ -24,9 +24,6 @@ function Header() {
             <li>
               <Link to='/tutorial'>Participe</Link>
             </li>
-            <li>
-              <Link to='#'>Convide</Link>
-            </li>
           </ul>
         </nav>
       </header>
