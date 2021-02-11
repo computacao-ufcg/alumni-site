@@ -1,3 +1,15 @@
 .main-content {
   margin: 20px 40px 0px 40px;
 }
+
+h1 {
+  margin-top: 15px;
+}
+
+p {
+  margin: 20px 0px 0px 10px;
+}
+
+img {
+  margin: 30px 0px 0px 30px;
+}
