@@ -6,11 +6,11 @@ import Footer from "../../components/Footer";
 
 function SeeMorePage() {
   return (
-    <>
+    <div className='container'>
       <Header />
       <SeeMore />
       <Footer />
-    </>
+    </div>
   );
 }
 

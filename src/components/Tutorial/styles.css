@@ -1,15 +1,20 @@
 .main-content {
   margin: 20px 40px 0px 40px;
+  background-color: #FCFFED;
 }
 
 h1 {
   margin-top: 15px;
 }
 
-p {
+.paragraph {
   margin: 20px 0px 0px 10px;
 }
 
 img {
   margin: 30px 0px 0px 30px;
+}
+
+.small-image {
+  display: grid;
 }

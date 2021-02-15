@@ -6,11 +6,11 @@ import Tutorial from "../../components/Tutorial";
 
 function TutorialPage() {
   return (
-    <>
+    <div className='container'>
       <Header />
       <Tutorial />
       <Footer />
-    </>
+    </div>
   );
 }
 
