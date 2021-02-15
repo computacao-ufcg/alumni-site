@@ -1,17 +1,17 @@
 import React from "react";
 
 import Header from "../../components/Header";
+import SeeMore from "../../components/SeeMore";
 import Footer from "../../components/Footer";
-import Tutorial from "../../components/Tutorial";
 
-function TutorialPage() {
+function SeeMorePage() {
   return (
     <div className='container'>
       <Header />
-      <Tutorial />
+      <SeeMore />
       <Footer />
     </div>
   );
 }
 
-export default TutorialPage;
+export default SeeMorePage;

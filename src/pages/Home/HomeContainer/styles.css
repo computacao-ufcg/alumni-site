@@ -70,6 +70,12 @@
 #content .info p {
   font-size: 24px;
   font-weight: 300;
+  margin-top: 50px;
   margin-bottom: 30px;
   width: 30vw;
+}
+
+#content .info hr {
+  border-top: 1px solid #fff;
+  margin-top: 10px;
 }

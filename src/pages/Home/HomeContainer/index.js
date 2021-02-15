@@ -8,7 +8,7 @@ export default function HomeContainer() {
     <div id='content'>
       <div className='info'>
         <h1>
-          Seja <br /> bem-vindo
+          Seja <br /><hr /> bem-vindo
         </h1>
 
         <p>

@@ -13,25 +13,25 @@ function Footer() {
           </h5>
         </div>
         <div className='social-icons'>
-          <a href='#' class='home__social-icon' target='_blank'>
-            <i class='bx bxl-linkedin-square'></i>
+          <a href='#' className='home__social-icon' target='_blank'>
+            <i className='bx bxl-linkedin-square'></i>
           </a>
           <a
             href='http://www.instagram.com/computacaoufcg'
-            class='home__social-icon'
+            className='home__social-icon'
             target='_blank'
           >
-            <i class='bx bxl-instagram-alt'></i>
+            <i className='bx bxl-instagram-alt'></i>
           </a>
           <a
             href='https://github.com/computacao-ufcg'
-            class='home__social-icon'
+            className='home__social-icon'
             target='_blank'
           >
-            <i class='bx bxl-github'></i>
+            <i className='bx bxl-github'></i>
           </a>
-          <a href='#' class='home__social-icon' target='_blank'>
-            <i class='bx bx-mail-send'></i>
+          <a href='#' className='home__social-icon' target='_blank'>
+            <i className='bx bx-mail-send'></i>
           </a>
         </div>
       </footer>

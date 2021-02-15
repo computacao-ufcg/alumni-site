@@ -27,3 +27,7 @@ body {
   background: #fcffed;
   -webkit-font-smoothing: antialiased;
 }
+
+.container {
+  background-color: #FCFFED;
+}

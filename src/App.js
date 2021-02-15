@@ -5,6 +5,7 @@ import "./global.css";
 
 import Home from "./pages/Home";
 import TutorialPage from "./pages/Tutorial";
+import SeeMorePage from "./pages/SeeMore";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/tutorial' exact component={TutorialPage} />
+          <Route path='/seeMore' exact component={SeeMorePage} />
         </Switch>
       </div>
     </Router>
