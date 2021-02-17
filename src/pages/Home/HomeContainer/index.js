@@ -18,7 +18,9 @@ export default function HomeContainer() {
           profissional.
         </p>
 
-        <Button />
+        <Button 
+          name='Participe'
+          link='/tutorial' />
       </div>
 
       <div className='vertical-line'></div>
@@ -39,6 +41,10 @@ export default function HomeContainer() {
             <p>anos de historia</p>
           </div>
         </div>
+        <Button 
+          name='Ver mais'
+          link='/seeMore'
+          className='seemore-btn' />
       </div>
     </div>
   );

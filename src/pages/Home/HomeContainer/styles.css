@@ -32,8 +32,9 @@
   width: 10%;
 }
 #statistics #second {
-  margin-top: 9vh;
+  margin-top: 5vh;
   width: 20%;
+  padding-bottom: 30px;
 }
 
 #statistics #second h3 {
@@ -78,4 +79,8 @@
 #content .info hr {
   border-top: 1px solid #fff;
   margin-top: 10px;
+}
+
+.seemore-btn {
+  margin-top: 15px;
 }
