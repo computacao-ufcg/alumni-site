@@ -7,16 +7,9 @@ export default function HomeContainer() {
   return (
     <div id='content'>
       <div className='info'>
-        <h1>
+        <h1 className='main-text'>
           Seja <br /><hr /> bem-vindo
         </h1>
-
-        <p>
-          Em 2013 o Departamento de Sistemas e Computação da UFCG completa 40
-          anos de fundação. Nesses anos, formamos 1265 profissionais, que são
-          reconhecidos no mercado de trabalho pela sua competência e ética
-          profissional.
-        </p>
 
         <Button 
           name='Participe'

@@ -8,7 +8,7 @@ function Footer() {
       <footer className='footer-container'>
         <div className='footer-text'>
           <h5>
-            Departamento de Sistemas e Computação - UFCG | All rights reserved
+            Unidade Acadêmica de Sistemas e Computação - UFCG | All rights reserved
             &copy;
           </h5>
         </div>
