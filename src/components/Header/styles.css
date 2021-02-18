@@ -1,0 +1,42 @@
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fcffed;
+}
+
+.image-section img {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 350px;
+  height: 80px;
+}
+
+.topics-section {
+  max-width: 100%;
+  position: relative;
+  margin-right: 80px;
+}
+
+.topics-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.topics-section ul {
+  gap: 30px;
+}
+
+.topics-section ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.topics-section ul li a:hover {
+  color: #6aa8ca;
+  text-decoration: underline;
+}
