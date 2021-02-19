@@ -8,8 +8,8 @@ function Footer() {
       <footer className='footer-container'>
         <div className='footer-text'>
           <h5>
-            Unidade Acadêmica de Sistemas e Computação - UFCG | All rights reserved
-            &copy;
+            Unidade Acadêmica de Sistemas e Computação - UFCG | All rights
+            reserved &copy;
           </h5>
         </div>
         <div className='social-icons'>

@@ -69,18 +69,34 @@ function SeeMore() {
 
   return (
     <React.Fragment>
-      <div className='main-seemore'>
-        <div className='main-content-seemore'>
-          <div className='main-container-seemore'>
-            <div className='container-title-seemore'>
+      <div className="main-seemore">
+        <div className="main-content-seemore">
+          <div className="main-container-seemore">
+            <div className="container-title-seemore">
               <h1>VER MAIS</h1>
             </div>
 
-            <div className='seemore-input-box'>
-              <div>
-                <FiSearch size={25} />
+            <div className="seemore-input-boxes">
+              <div className="seemore-input-box">
+                <div>
+                  <FiSearch size={25} />
+                </div>
+                <input type="text" placeholder="Buscar por nome do egresso" />
               </div>
-              <input type='text' placeholder='Buscar por período' />
+
+              <div className="seemore-input-box">
+                <div>
+                  <FiSearch size={25} />
+                </div>
+                <input type="text" placeholder="Buscar por período de admissão" />
+              </div>
+
+              <div className="seemore-input-box">
+                <div>
+                  <FiSearch size={25} />
+                </div>
+                <input type="text" placeholder="Buscar por período de graduação" />
+              </div>
             </div>
 
             <div className={"listEgressos"}>

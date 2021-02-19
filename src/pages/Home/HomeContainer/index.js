@@ -8,12 +8,11 @@ export default function HomeContainer() {
     <div id='content'>
       <div className='info'>
         <h1 className='main-text'>
-          Seja <br /><hr /> bem-vindo
+          Seja <br />
+          <hr /> bem-vindo
         </h1>
 
-        <Button 
-          name='Participe'
-          link='/tutorial' />
+        <Button name='Participe' link='/tutorial' />
       </div>
 
       <div className='vertical-line'></div>
@@ -34,10 +33,7 @@ export default function HomeContainer() {
             <p>anos de historia</p>
           </div>
         </div>
-        <Button 
-          name='Ver mais'
-          link='/seeMore'
-          className='seemore-btn' />
+        <Button name='Ver mais' link='/seeMore' className='seemore-btn' />
       </div>
     </div>
   );
