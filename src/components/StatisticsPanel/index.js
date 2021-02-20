@@ -10,6 +10,18 @@ function StatisticsPanel() {
       <div className="grid-box">
         <div className="grid-container">
           <div className="grid-item">
+            <p className="title-item-box">Anos de história do curso</p>
+            <p className="value-item-box">590</p>
+          </div>
+          <div className="grid-item">
+            <p className="title-item-box">Egressos registrados no sistema</p>
+            <p className="value-item-box">590</p>
+          </div>
+          <div className="grid-item">
+            <p className="title-item-box">Número de egressos com match</p>
+            <p className="value-item-box">590</p>
+          </div>
+          <div className="grid-item">
             <p className="title-item-box">Total de egressos</p>
             <p className="value-item-box">590</p>
           </div>
@@ -26,35 +38,11 @@ function StatisticsPanel() {
             <p className="value-item-box">590</p>
           </div>
           <div className="grid-item">
-            <p className="title-item-box">Total de egressos</p>
+            <p className="title-item-box">Egressos trabalhando em companhias privadas</p>
             <p className="value-item-box">590</p>
           </div>
           <div className="grid-item">
-            <p className="title-item-box">Total de egressos</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Total de egressos</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Total de egressos</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Total de egressos</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Total de egressos</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Total de egressos</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Total de egressos</p>
+            <p className="title-item-box">Egressos trabalhando em companhias públicas</p>
             <p className="value-item-box">590</p>
           </div>
         </div>
