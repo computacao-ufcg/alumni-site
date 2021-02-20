@@ -14,7 +14,15 @@ function Tutorial() {
       <p className='paragraph'>
         Para se cadastrar no Alumni, é necessário que o aluno egresso tenha uma
         conta cadastrada no Linkedln. Caso não tenha, pode se cadastrar através
-        do seguinte <a href='https://www.linkedin.com/signup/' target='_blank' rel='noreferrer'>link</a>.
+        do seguinte{" "}
+        <a
+          href='https://www.linkedin.com/signup/'
+          target='_blank'
+          rel='noreferrer'
+        >
+          link
+        </a>
+        .
       </p>
       <p className='paragraph'>
         Após a criação da conta do Linkedln (caso o aluno egresso não a tenha),
@@ -23,7 +31,7 @@ function Tutorial() {
         mostrado na imagem abaixo.
       </p>
       <img src={AddSectionImage} alt='' />
-      <img src={ProfessionalExperienceImage} className='small-image' alt=''/>
+      <img src={ProfessionalExperienceImage} className='small-image' alt='' />
 
       <p className='paragraph'>
         Após isso, o usuário seleciona o opcção: <b>Formação Acadêmica</b> e

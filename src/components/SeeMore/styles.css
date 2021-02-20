@@ -46,16 +46,17 @@
 
 .seemore-input-box {
   height: 5vh;
-  width: 30vw;
+  width: 35vw;
   display: flex;
   flex-direction: row;
 
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
-.seemore-input-box div {
-  background-color: #f5f6fa;
+.seemore-input-box div{
+  background-color: #F5F6FA;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,8 +68,8 @@
   border-right: 0;
 }
 
-.seemore-input-box input {
-  background-color: #f5f6fa;
+.seemore-input-box input{
+  background-color: #F5F6FA;
   border: 1px solid #707070;
   border-left: 0;
 
@@ -76,6 +77,6 @@
   height: 5vh;
 }
 
-.seemore-input-box input:focus {
+.seemore-input-box input:focus{
   outline: none;
 }

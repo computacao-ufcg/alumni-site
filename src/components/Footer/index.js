@@ -8,8 +8,8 @@ function Footer() {
       <footer className='footer-container'>
         <div className='footer-text'>
           <h5>
-            Departamento de Sistemas e Computação - UFCG | All rights reserved
-            &copy;
+            Unidade Acadêmica de Sistemas e Computação - UFCG | All rights
+            reserved &copy;
           </h5>
         </div>
         <div className='social-icons'>
@@ -20,6 +20,7 @@ function Footer() {
             href='http://www.instagram.com/computacaoufcg'
             className='home__social-icon'
             target='_blank'
+            rel='noreferrer'
           >
             <i className='bx bxl-instagram-alt'></i>
           </a>
@@ -27,10 +28,11 @@ function Footer() {
             href='https://github.com/computacao-ufcg'
             className='home__social-icon'
             target='_blank'
+            rel='noreferrer'
           >
             <i className='bx bxl-github'></i>
           </a>
-          <a href='#' className='home__social-icon' target='_blank'>
+          <a href='' className='home__social-icon' target='_blank'>
             <i className='bx bx-mail-send'></i>
           </a>
         </div>
