@@ -2,6 +2,8 @@ import React from "react";
 
 import "./styles.css";
 
+import MemberItem from "./MemberItem";
+
 function NewMembers() {
   return (
     <>
@@ -9,22 +11,21 @@ function NewMembers() {
 
       <div className="new-members-list">
         <ul>
-          <li>
-            <p>Fulano</p>
-            <a href="#">Linkedln</a>
-          </li>
-          <li>
-            <p>Ciclano</p>
-            <a href="#">Linkedln</a>
-          </li>
-          <li>
-            <p>Beltrano</p>
-            <a href="#">Linkedln</a>
-          </li>
-          <li>
-            <p>Outro</p>
-            <a href="#">Linkedln</a>
-          </li>
+          <MemberItem 
+            name="Ciclano" 
+            linkedln_url="" />
+          
+          <MemberItem 
+            name="Beltrano" 
+            linkedln_url="" />
+
+          <MemberItem 
+            name="Fulano" 
+            linkedln_url="" />
+
+          <MemberItem 
+            name="Outro" 
+            linkedln_url="" />
         </ul>
       </div>
     </>

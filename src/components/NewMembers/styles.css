@@ -1,6 +1,7 @@
 .title-panel-new-members {
   margin-top: 5vh;
   margin-left: 40px;
+  color: var(--color-primary-lighter);
 }
 
 .new-members-list {

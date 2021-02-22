@@ -20,7 +20,7 @@ function StatisticsPanel() {
             value="590" />
 
           <StatisticCard 
-            name="Número de egressos com match"
+            name="Egressos mapeados"
             value="590" />
 
           <StatisticCard 

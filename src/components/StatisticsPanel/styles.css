@@ -1,6 +1,7 @@
 .title-panel {
   margin-top: 15vh;
   margin-left: 40px;
+  color: var(--color-primary-lighter);
 }
 
 .grid-box {
