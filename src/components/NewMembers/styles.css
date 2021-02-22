@@ -1,0 +1,15 @@
+.title-panel-new-members {
+  margin-top: 5vh;
+  margin-left: 40px;
+  color: var(--color-primary-lighter);
+}
+
+.new-members-list {
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+.new-members-list ul li {
+  margin: 10px 0 10px 0;
+  list-style: none;
+}
