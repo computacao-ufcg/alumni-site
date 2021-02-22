@@ -2,6 +2,8 @@ import React from "react";
 
 import "./styles.css";
 
+import StatisticCard from "./StatisticCard";
+
 function StatisticsPanel() {
   return (
     <>
@@ -9,42 +11,45 @@ function StatisticsPanel() {
 
       <div className="grid-box">
         <div className="grid-container">
-          <div className="grid-item">
-            <p className="title-item-box">Anos de história do curso</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Egressos registrados no sistema</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Número de egressos com match</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Total de egressos</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Egressos trabalhando na academia</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Egressos trabalhando no governo</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Egressos trabalhando na indústria</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Egressos trabalhando em companhias privadas</p>
-            <p className="value-item-box">590</p>
-          </div>
-          <div className="grid-item">
-            <p className="title-item-box">Egressos trabalhando em companhias públicas</p>
-            <p className="value-item-box">590</p>
-          </div>
+          <StatisticCard 
+            name="Anos de história do curso"
+            value="590" />
+
+          <StatisticCard 
+            name="Egressos registrados no sistema"
+            value="590" />
+
+          <StatisticCard 
+            name="Número de egressos com match"
+            value="590" />
+
+          <StatisticCard 
+            name="Total de egressos"
+            value="590" />
+
+          <StatisticCard 
+            name="Egressos trabalhando na academia"
+            value="590" />
+
+          <StatisticCard 
+            name="Egressos trabalhando no governo"
+            value="590" />
+
+          <StatisticCard 
+            name="Egressos trabalhando na indústria"
+            value="590" />
+
+          <StatisticCard 
+            name="Egressos trabalhando no governo"
+            value="590" /> 
+
+          <StatisticCard 
+            name="Egressos trabalhando em companhias privadas"
+            value="590" />
+
+          <StatisticCard 
+            name="Egressos trabalhando em companhias públicas"
+            value="590" /> 
         </div>
       </div>
     </>
