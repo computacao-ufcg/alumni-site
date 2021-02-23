@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { api_AS, api_EAS } from "../../services/api";
+import handleSubmit from "../../services/login";
 import ListEgressos from "./ListEgressos";
 import { Pagination } from "rsuite";
 import { FiSearch } from "react-icons/fi";
@@ -8,8 +9,6 @@ import "./styles.css";
 function SeeMore() {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(0);
-  const [name, setName] = useState("fubica");
-  const [password, setPassword] = useState("fubica123");
   const [admission, setAdmission] = useState("");
   const [graduation, setGraduation] = useState("");
   const [nameAlumnus, setNameAlumnus] = useState("");
@@ -18,35 +17,6 @@ function SeeMore() {
     handleSubmit();
     handleProfile(page);
   }, []);
-
-  const handleSubmit = async () => {
-    let query = "publicKey";
-    const res = await api_AS.get(query, {});
-    if (res) {
-      let publickey = res.data.publicKey;
-      handleLogin(name, password, publickey);
-    } else {
-      alert("Public Key não encontrada");
-    }
-  };
-
-  const handleLogin = async (name, password, publickey) => {
-    let query = "as/tokens";
-    const res = await api_EAS
-      .post(query, {
-        credentials: {
-          username: name,
-          password: password,
-        },
-        publicKey: publickey,
-      })
-      .then(res => {
-        localStorage.setItem("eureca-token", res.data.token);
-      })
-      .catch(err => {
-        alert("Usuário ou senha incorretos");
-      });
-  };
 
   const handleProfile = async page => {
     let query = "match/search/" + page + `?admission=${admission}&graduation=${graduation}&name=${nameAlumnus}`;
