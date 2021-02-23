@@ -18,7 +18,7 @@ function ListEgressos(props) {
       >
         <Column width={450} align='center' fixed>
           <HeaderCell>Nome do Egresso</HeaderCell>
-          <Cell dataKey='fullName' />
+          <Cell dataKey='name' />
         </Column>
         <Column>
           <HeaderCell width={120}>Admissão</HeaderCell>
