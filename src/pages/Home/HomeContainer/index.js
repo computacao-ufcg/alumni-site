@@ -33,7 +33,6 @@ export default function HomeContainer() {
             <p>anos de historia</p>
           </div>
         </div>
-        <Button name='Ver mais' link='/seeMore' className='seemore-btn' />
       </div>
     </div>
   );
