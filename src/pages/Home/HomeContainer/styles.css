@@ -16,9 +16,15 @@
 
 #content #data {
   width: 45vw;
+  margin-right: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.img-home {
+  width: 350px;
+  position: relative;
 }
 
 #statistics {
@@ -31,28 +37,46 @@
   margin-left: 5vw;
 }
 
-#statistics #first {
-  margin-top: -5vh;
-  width: 10%;
-}
-#statistics #second {
-  margin-top: 5vh;
+#statistics #first_item {
+  margin-top: -50vh;
   width: 20%;
-  padding-bottom: 30px;
 }
 
-#statistics #second h3 {
+#statistics #second_item {
+  margin-top: -25vh;
+  margin-left: -12vh;
+}
+
+#statistics #third_item {
+  margin-top: -5vh;
+  margin-left: -8vh;
+}
+
+#statistics #fourth_item {
+  margin-top: 5vh;
+}
+
+#statistics #fourth_item h3 {
   font-size: 45px;
 }
 
-#statistics #third {
+#statistics #fifth_item {
   margin-top: 3vh;
-  width: 20%;
 }
 
-#statistics #fourth {
-  margin-bottom: 7vh;
-  margin-right: 20px;
+#statistics #sixth_item {
+  margin-top: -20vh;
+  margin-left: 10px;
+}
+
+#statistics #seventh_item {
+  margin-top: -55vh;
+  margin-left: -15vh;
+}
+
+#statistics #eighth_item {
+  margin-top: -45vh;
+  margin-left: -15vh;
 }
 
 #statistics h3 {
@@ -69,7 +93,7 @@
 #content .vertical-line {
   border-left: 4px solid var(--color-line-in-grey);
   height: 60vh;
-  margin-right: 250px;
+  margin-right: 100px;
 }
 
 #content .info h1 {

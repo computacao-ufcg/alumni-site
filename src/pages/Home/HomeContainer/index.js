@@ -46,23 +46,35 @@ function HomeContainer() {
       <div className='vertical-line'></div>
 
       <div id='data'>
-        <img src={SearchImg} alt='search'></img>
+        <img src={SearchImg} alt='search' className="img-home"></img>
         <div id='statistics'>
-          <div id='first'>
+          <div id='first_item'>
             <h3>100</h3>
-            <p>Egressos cadastrados</p>
+            <p>Alunos formados no último ano</p>
           </div>
-          <div id='second'>
+          <div id='second_item'>
+            <h3>100</h3>
+            <p>Egressos <br/> mapeados</p>
+          </div>
+          <div id='third_item'>
+            <h3>100</h3>
+            <p>Egressos <br/> trabalhando na <br/> academia</p>
+          </div>
+          <div id='fourth_item'>
             <h3>300</h3>
-            <p>alunos formados no ultimo ano</p>
+            <p>Egressos <br/> trabalhando no <br/> governo</p>
           </div>
-          <div id='third'>
-            <h3>{ statistics.historyYears }</h3>
-            <p>Anos de historia</p>
-          </div>
-          <div id='fourth'>
+          <div id='fifth_item'>
             <h3>40</h3>
-            <p>anos de historia</p>
+            <p>Egressos <br/> trabalhando na <br/> indústria</p>
+          </div>
+          <div id='sixth_item'>
+            <h3>40</h3>
+            <p>Egressos trabalhando em companhias privadas</p>
+          </div>
+          <div id='seventh_item'>
+            <h3>40</h3>
+            <p>Egressos trabalhando em companhias públicas</p>
           </div>
         </div>
       </div>
