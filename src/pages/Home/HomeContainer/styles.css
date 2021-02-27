@@ -10,15 +10,30 @@
   width: 55vw;
 }
 
+#content .info p {
+  font-size: 24px;
+  font-weight: 100;
+  width: 30vw;
+  text-align: justify;
+} 
+
 #content .info .main-text {
-  margin-bottom: 130px;
+  margin-top: -20px;
+  margin-bottom: 50px;
 }
 
 #content #data {
   width: 45vw;
+  margin-right: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.img-home {
+  width: 350px;
+  margin-left: -12px;
+  position: relative;
 }
 
 #statistics {
@@ -31,23 +46,43 @@
   margin-left: 5vw;
 }
 
-#statistics #first {
+#statistics #first_item {
+  margin-top: -50vh;
+  margin-left: -5px;
+  width: 20%;
+}
+
+#statistics #second_item {
+  margin-top: -25vh;
+  margin-left: -12vh;
+}
+
+#statistics #third_item {
   margin-top: -5vh;
-  width: 10%;
+  margin-left: -8vh;
 }
-#statistics #second {
+
+#statistics #fourth_item {
   margin-top: 5vh;
-  width: 20%;
-  padding-bottom: 30px;
 }
 
-#statistics #second h3 {
-  font-size: 45px;
-}
-
-#statistics #third {
+#statistics #fifth_item {
   margin-top: 3vh;
-  width: 20%;
+}
+
+#statistics #sixth_item {
+  margin-top: -20vh;
+  margin-left: 10px;
+}
+
+#statistics #seventh_item {
+  margin-top: -50vh;
+  margin-left: -15vh;
+}
+
+#statistics #eighth_item {
+  margin-top: -40vh;
+  margin-left: -15vh;
 }
 
 #statistics h3 {
@@ -64,6 +99,7 @@
 #content .vertical-line {
   border-left: 4px solid var(--color-line-in-grey);
   height: 60vh;
+  margin-right: 100px;
 }
 
 #content .info h1 {
@@ -83,8 +119,4 @@
 #content .info hr {
   border-top: 1px solid #fff;
   margin-top: 10px;
-}
-
-.seemore-btn {
-  margin-top: 15px;
 }
