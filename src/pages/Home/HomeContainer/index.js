@@ -12,6 +12,7 @@ import "./styles.css";
 function HomeContainer() {
   const [statistics, setStatistics] = useState({});
   const [courseName, setCourseName] = useState("computing-science");
+  const [level, setLevel] = useState("undergraduate");
   const year = new Date().getFullYear();
 
   useEffect(() => {
@@ -20,11 +21,11 @@ function HomeContainer() {
   }, []);
 
   const handleStatistics = async () => {
-    let query = `alumniSiteStatistics?courseName=${ courseName }`;
+    let query = `alumniSiteStatistics?courseName=${ courseName }&level=${ level }`;
     const res = await api_AS.get(query, {
       headers: { "Authentication-Token": localStorage.getItem("eureca-token") },
     });
-
+    console.log(res);
     if (res.status === 200) {
       setStatistics(res.data);
       console.log(statistics.historyYears);
