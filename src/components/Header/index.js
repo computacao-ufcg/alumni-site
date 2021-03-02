@@ -24,6 +24,9 @@ function Header() {
             <li>
               <Link to='/tutorial'>Participe</Link>
             </li>
+            <li>
+              <Link to='/statistics'>Estatísticas</Link>
+            </li>
           </ul>
         </nav>
       </header>
