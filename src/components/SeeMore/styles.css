@@ -1,6 +1,8 @@
 .main-seemore {
-  height: auto;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
+  overflow: auto;;
 }
 
 .main-content-seemore {
@@ -10,22 +12,25 @@
 
 .main-container-seemore {
   width: 84%;
-  height: 820px;
+  min-height: 75%;
   margin-left: 120px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 1px 4px #15223214;
   border-radius: 6px;
   opacity: 1;
-  display: grid;
-  justify-items: center;
+  padding-bottom: 10vh;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-title-seemore {
   height: 62px;
   width: 200px;
 
-  justify-self: left;
-  margin-left: 40px;
+  margin-left: 20px;
+  align-self: flex-start;
 }
 
 .container-title-seemore h1 {
@@ -33,6 +38,7 @@
 }
 
 .listEgressos {
+  margin-top: 50px;
   text-align: center;
   justify-content: center;
   color: #886859;
@@ -42,6 +48,11 @@
 .tableEgressos {
   justify-content: center;
   display: flex;
+}
+
+.seemore-input-boxes {
+  display: flex;
+  flex-direction: column;
 }
 
 .seemore-input-box {
@@ -79,4 +90,22 @@
 
 .seemore-input-box input:focus{
   outline: none;
+}
+
+.seemore-input-boxes button{
+  width: 200px;
+  height: 50px;
+  background:#886859;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+  font-size: 1rem; 
+  cursor: pointer;
+
+  align-self: flex-end;
+}
+
+.seemore-input-boxes button:hover{
+  background-color: #886859ea;
 }
