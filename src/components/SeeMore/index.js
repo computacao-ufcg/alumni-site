@@ -61,12 +61,12 @@ function SeeMore() {
   return (
     <React.Fragment>
       <div className="main-seemore">
-        {/* <div className="main-content-seemore"> */}
-          <div className="main-container-seemore">
-            <div className="container-title-seemore">
-              <h1>VER MAIS</h1>
-            </div>
+        <div className="main-container-seemore">
+          <div className="container-title-seemore">
+            <h1>VER MAIS</h1>
+          </div>
 
+          <div className="main-seemore-group">
             <div className="seemore-input-boxes">
               <div className="seemore-input-box">
                 <div>
@@ -88,32 +88,31 @@ function SeeMore() {
                 </div>
                 <input id="ipt-graduation" type="text" placeholder="Buscar por período de graduação" />
               </div>
-              <button onClick={ handleSearch }>Buscar</button>
             </div>
-
-            {
-              search ? <React.Fragment /> :
-
-              loading ? <MyLoading /> :
-              data.length === 0 ? <NoDataFound msg="Nenhum dado encontrado." /> :
-                <div className={"listEgressos"}>
-                  <ListEgressos listData={data.content ? data.content : []} />
-                  <Pagination
-                    pages={data.totalPages ? data.totalPages : 0}
-                    maxButtons={5}
-                    onSelect={handlePage}
-                    activePage={page + 1}
-                    prev
-                    next
-                    first
-                    last
-                    ellipsis
-                    boundaryLinks
-                  />
-                </div>
-            }
+            <button onClick={ handleSearch }>Buscar</button>
           </div>
-        {/* </div> */}
+
+          {
+            search ? <React.Fragment /> :
+            loading ? <MyLoading /> :
+            data.length === 0 ? <NoDataFound msg="Nenhum dado encontrado." /> :
+              <div className={"listEgressos"}>
+                <ListEgressos listData={ data } />
+                <Pagination
+                  pages={data.totalPages ? data.totalPages : 0}
+                  maxButtons={5}
+                  onSelect={handlePage}
+                  activePage={page + 1}
+                  prev
+                  next
+                  first
+                  last
+                  ellipsis
+                  boundaryLinks
+                />
+              </div>
+          }
+        </div>
       </div>
     </React.Fragment>
   );
