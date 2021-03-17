@@ -38,16 +38,27 @@ function HomeContainer() {
     <div id='content'>
       <div className='info'>
         <h1 className='main-text'>
-          Seja <br />
-          <hr /> bem-vindo
+          Olá!
         </h1>
 
         <p>
-          Em <b>{ year }</b>, o Departamento de Sistemas e Computação da UFCG 
-          completa <b>{ statistics.historyYears }</b> anos de fundação. Nesses anos, 
+          Em <b>{ year }</b>, a Unidade Acadêmica de Sistemas e Computação (UASC) da
+          Universidade Federal de Campina Grande (UFCG)
+          completa <b>{ statistics.historyYears }</b> anos de existência. Nesses anos,
           formamos um total de <b>{ statistics.numberAlumniCourse }</b> profissionais, 
           que são reconhecidos no mercado de trabalho pela sua competência e 
-          ética profissional.
+          ética profissional.<br>
+
+          Este sítio <i>web</i> traz estatísticas sobre a atuação desses egressos no mercado
+          de trabalho. Os dados são obtidos através dos perfis públicos dos egressos
+          no LinkedIn.<br>
+
+          Se você é graduado em um dos cursos oferecidos pela UASC/UFCG,
+          nós o convidamos para juntar-se ao nosso grupo de egressos no LinkedIn
+          para ter seus dados contabilizados aqui.<br>
+
+          Aqui também é possível consultar de forma mais simples os perfis de nossos egressos
+          cadastrados no LinkedIn.
         </p>
 
         <Button name='Participe' link='/tutorial' />
