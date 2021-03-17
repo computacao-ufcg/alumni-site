@@ -13,7 +13,12 @@ function Footer() {
           </h5>
         </div>
         <div className='social-icons'>
-          <a href='#' className='home__social-icon' target='_blank'>
+          <a
+            href='https://www.linkedin.com/groups/1097807/'
+            className='home__social-icon'
+            target='_blank'
+            rel='noreferrer'
+          >
             <i className='bx bxl-linkedin-square'></i>
           </a>
           <a
