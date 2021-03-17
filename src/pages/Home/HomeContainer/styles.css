@@ -17,9 +17,12 @@
   text-align: justify;
 } 
 
-#content .info .main-text {
-  margin-top: -20px;
-  margin-bottom: 50px;
+.paragraphs {
+  width: 600px;
+  max-width: 520px;
+  margin-bottom: 100px;
+  height: 500px;
+  overflow: auto;
 }
 
 #content #data {
@@ -100,6 +103,7 @@
   border-left: 4px solid var(--color-line-in-grey);
   height: 60vh;
   margin-right: 100px;
+  gap: 40px;
 }
 
 #content .info h1 {

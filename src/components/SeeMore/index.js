@@ -62,9 +62,6 @@ function SeeMore() {
     <React.Fragment>
       <div className="main-seemore">
         <div className="main-container-seemore">
-          <div className="container-title-seemore">
-            <h1>VER MAIS</h1>
-          </div>
 
           <div className="main-seemore-group">
             <div className="seemore-input-boxes">

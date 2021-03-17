@@ -25,23 +25,12 @@
   align-items: center;
 }
 
-.container-title-seemore {
-  height: 62px;
-  width: 200px;
-
-  margin-left: 20px;
-  align-self: flex-start;
-}
-
-.container-title-seemore h1 {
-  font-size: 18px;
-}
-
 .main-seemore-group {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 .listEgressos {
