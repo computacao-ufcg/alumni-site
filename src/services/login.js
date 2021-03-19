@@ -12,13 +12,13 @@ const handleLogin = async (name, password, publickey) => {
         password: password,
       },
       publicKey: publickey,
-    })
-    .then(res => {
-      localStorage.setItem("eureca-token", res.data.token);
-    })
-    .catch(err => {
-      alert("Usuário ou senha incorretos");
     });
+
+  if (res.status === 201) {
+    sessionStorage.setItem("eureca-token", res.data.token);
+  } else {
+    alert("Usuário ou senha incorretos");
+  }
 };
 
 const handleSubmit = async () => {
@@ -26,7 +26,7 @@ const handleSubmit = async () => {
   const res = await api_AS.get(query, {});
   if (res) {
     let publickey = res.data.publicKey;
-    handleLogin(name, password, publickey);
+    await handleLogin(name, password, publickey);
   } else {
     alert("Public Key não encontrada");
   }
