@@ -83,11 +83,6 @@
   margin-left: -15vh;
 }
 
-#statistics #eighth_item {
-  margin-top: -40vh;
-  margin-left: -15vh;
-}
-
 #statistics h3 {
   color: var(--color-primary-dark);
   font-weight: bold;
@@ -123,4 +118,84 @@
 #content .info hr {
   border-top: 1px solid #fff;
   margin-top: 10px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1600px) {
+  .paragraphs {
+    width: 600px;
+    max-width: 600px;
+    margin-bottom: 100px;
+    height: 500px;
+    overflow: auto;
+  }
+
+  .img-home {
+    width: 290px;
+    margin-top: -20px;
+    margin-left: -60px;
+  }
+
+  #data {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .paragraphs {
+    margin-top: 50px;
+    margin-left: 70px;
+    width: 700px;
+    max-width: 700px;
+    height: max-content;
+    margin-bottom: 100px;
+    overflow: auto;
+  }
+
+  .img-home {
+    width: 320px;
+    margin-top: -20px;
+    margin-left: -6rem;
+  }
+
+  #data {
+    margin-top: 70px;
+  }
+
+  #statistics #first_item {
+    margin-top: -45vh;
+    margin-left: 15px;
+    width: 20%;
+  }
+  
+  #statistics #second_item {
+    margin-top: -25vh;
+    margin-left: -12vh;
+  }
+  
+  #statistics #third_item {
+    margin-top: -5vh;
+    margin-left: -8vh;
+  }
+  
+  #statistics #fourth_item {
+    margin-top: 5vh;
+  }
+  
+  #statistics #fifth_item {
+    margin-top: 3vh;
+  }
+  
+  #statistics #sixth_item {
+    margin-top: -18vh;
+    margin-left: 10px;
+  }
+
+  #statistics #seventh_item {
+    margin-top: -40vh;
+    margin-left: -40vh;
+  }
+
 }
