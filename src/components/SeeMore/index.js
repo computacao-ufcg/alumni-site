@@ -27,11 +27,9 @@ function SeeMore() {
   const handleProfile = async (page, name, admission, graduation) => {
     setLoading(true);
 
-    debugger;
-
     let query = `match/search/${page}?admission=${admission}&graduation=${graduation}&name=${name}`;
     const res = await api_AS.get(query, {
-      headers: { "Authentication-Token": localStorage.getItem("eureca-token") },
+      headers: { "Authentication-Token": sessionStorage.getItem("eureca-token") },
     });
 
     if (res.status === 200) {
@@ -62,9 +60,6 @@ function SeeMore() {
     <React.Fragment>
       <div className="main-seemore">
         <div className="main-container-seemore">
-          <div className="container-title-seemore">
-            <h1>VER MAIS</h1>
-          </div>
 
           <div className="main-seemore-group">
             <div className="seemore-input-boxes">

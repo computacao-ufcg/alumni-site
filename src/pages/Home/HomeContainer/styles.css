@@ -17,82 +17,16 @@
   text-align: justify;
 } 
 
-#content .info .main-text {
-  margin-top: -20px;
-  margin-bottom: 50px;
+.paragraphs {
+  width: 600px;
+  max-width: 600px;
+  margin-left: 30px;
+  margin-bottom: 100px;
+  height: 500px;
+  overflow: auto;
 }
 
-#content #data {
-  width: 45vw;
-  margin-right: 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.img-home {
-  width: 350px;
-  margin-left: -12px;
-  position: relative;
-}
-
-#statistics {
-  width: 100%;
-  height: 20%;
-  display: flex;
-}
-
-#statistics div {
-  margin-left: 5vw;
-}
-
-#statistics #first_item {
-  margin-top: -50vh;
-  margin-left: -5px;
-  width: 20%;
-}
-
-#statistics #second_item {
-  margin-top: -25vh;
-  margin-left: -12vh;
-}
-
-#statistics #third_item {
-  margin-top: -5vh;
-  margin-left: -8vh;
-}
-
-#statistics #fourth_item {
-  margin-top: 5vh;
-}
-
-#statistics #fifth_item {
-  margin-top: 3vh;
-}
-
-#statistics #sixth_item {
-  margin-top: -20vh;
-  margin-left: 10px;
-}
-
-#statistics #seventh_item {
-  margin-top: -50vh;
-  margin-left: -15vh;
-}
-
-#statistics #eighth_item {
-  margin-top: -40vh;
-  margin-left: -15vh;
-}
-
-#statistics h3 {
-  color: var(--color-primary-dark);
-  font-weight: bold;
-  font-size: 36px;
-}
-
-#statistics p {
-  font-size: 18px;
+.paragraphs p {
   font-weight: 300;
 }
 
@@ -100,6 +34,7 @@
   border-left: 4px solid var(--color-line-in-grey);
   height: 60vh;
   margin-right: 100px;
+  gap: 40px;
 }
 
 #content .info h1 {
@@ -119,4 +54,178 @@
 #content .info hr {
   border-top: 1px solid #fff;
   margin-top: 10px;
+}
+
+#data {
+  width: 100vh;
+  height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img-home {
+  align-self: center;
+}
+
+#data .img-home {
+  width: 50%;
+  height: 50%;
+
+  background-image: url("../../../assets/search.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#statistics {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#statistics h3 {
+  color: var(--color-primary-dark);
+  font-weight: bold;
+  font-size: 36px;
+}
+
+#statistics p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#first_item, #second_item, #third_item, #fourth_item,
+#fifth_item, #sixth_item, #seventh_item {
+  position: absolute;
+}
+
+#statistics #first_item {
+  top: 10%;
+  left: 8%;
+  width: 10%;
+}
+
+#statistics #second_item {
+  bottom: 40%;
+  right: 80%;
+}
+
+#statistics #third_item {
+  bottom: 0;
+  top: 75%;
+  right: 60%;
+}
+
+#statistics #fourth_item {
+  right: 20%;
+  bottom: 75%;
+}
+
+#statistics #fifth_item {
+  right: 0;
+  left: 35%;
+}
+
+#statistics #sixth_item {
+  right: 0;
+  bottom: 40%;
+  left: 78%;
+  width: 10px;
+}
+
+#statistics #seventh_item {
+  right: 0;
+  bottom: 0;
+  left: 70%;
+  top: 70%;
+  width: 10px;
+}
+
+@media (min-width: 1600px) {
+  .paragraphs {
+    width: 600px;
+    max-width: 600px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 500px;
+    overflow: auto;
+  }
+
+  #data .img-home {
+    margin-top: 100px;
+    margin-right: 40px;
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media (min-width: 1691px) {
+  #data .img-home {
+    margin-bottom: 100px;
+    margin-right: 10px;
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media (min-width: 1902px) {
+  #content {
+    width: 95%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    margin: 40px;
+  }
+
+  .paragraphs {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    width: 1000px;
+    max-width: 1500px;
+    height: max-content;
+    overflow: auto;
+  }
+
+  #content .vertical-line {
+    height: 60vh;
+    margin-left: -150px;
+  }
+
+  #data .img-home {
+    width: 30%;
+    height: 30%;
+    margin-right: 50px;
+    margin-bottom: 120px;
+  }
+}
+
+@media (min-width: 2028px) {
+  #data .img-home {
+    width: 30%;
+    height: 30%;
+    margin-right: 30px;
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width: 3043px) {
+  #data .img-home {
+    width: 30%;
+    height: 30%;
+    margin-right: 30px;
+    margin-bottom: 190px;
+  }
+}
+
+@media (min-width: 4564px) {
+  #data .img-home {
+    width: 30%;
+    height: 30%;
+    margin-right: 30px;
+    margin-bottom: 300px;
+  }
 }
