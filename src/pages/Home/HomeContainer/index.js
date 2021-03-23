@@ -74,7 +74,7 @@ function HomeContainer() {
             <div className='vertical-line'></div>
 
             <div id='data'>
-              <img src={SearchImg} alt='search' className="img-home"></img>
+              <div className="img-home"></div>
               <div id='statistics'>
                 <div id='first_item'>
                   <h3>
