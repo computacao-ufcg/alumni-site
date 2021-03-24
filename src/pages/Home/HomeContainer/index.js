@@ -64,8 +64,6 @@ function HomeContainer() {
                   Aqui também é possível consultar de forma mais simples os perfis de nossos egressos
                   cadastrados no LinkedIn.
                 </p>
-
-                <Button name='Participe' link='/tutorial' className="btn-participate" />
               </div>
             </div>
 
