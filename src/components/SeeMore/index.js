@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { api_AS, api_EAS } from "../../services/api";
+import { api_AS } from "../../services/api";
 import handleSubmit from "../../services/login";
 import ListEgressos from "./ListEgressos";
 import { Pagination } from "rsuite";

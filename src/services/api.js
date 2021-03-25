@@ -2,23 +2,7 @@ import axios from "axios";
 
 // Starting points
 const EURECA_AS = "http://eureca.lsd.ufcg.edu.br:8080/";
-const EURECA_BACKEND = "http://eureca.lsd.ufcg.edu.br:8081/";
 const ALUMNI_AS = "http://eureca.lsd.ufcg.edu.br:8082";
-
-// Default for tests
-const api = axios.create({
-  // baseURL: 'http://150.165.15.71:5000/',
-  // baseURL: 'http://localhost:5000/',
-  baseURL: EURECA_BACKEND,
-});
-
-// for Eureca Backend
-const api_EB = axios.create({
-  baseURL: EURECA_BACKEND,
-  headers: {
-    "Content-type": "application/json",
-  },
-});
 
 // for Eureca Authentication Service
 const api_EAS = axios.create({
@@ -36,5 +20,4 @@ const api_AS = axios.create({
   },
 });
 
-export default api;
 export { api_EAS, api_AS };

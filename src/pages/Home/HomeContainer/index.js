@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import Button from "../../../components/Button";
-
 import { api_AS } from "../../../services/api";
 import handleSubmit from "../../../services/login";
 
