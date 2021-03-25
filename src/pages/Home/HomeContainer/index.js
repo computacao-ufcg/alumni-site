@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import { Loader } from "rsuite";
+
 import { api_AS } from "../../../services/api";
 import handleSubmit from "../../../services/login";
 
@@ -36,7 +38,11 @@ function HomeContainer() {
   return (
     <React.Fragment>
       {
-        loading ? <p>Carregando</p> : 
+        loading ? 
+          <>
+            <div style={{ height: 445 }}></div>
+            <Loader backdrop content="loading..." vertical size='md' /> 
+          </> : 
           <div id='content'>
             <div className='info'>
               <div className="paragraphs">
