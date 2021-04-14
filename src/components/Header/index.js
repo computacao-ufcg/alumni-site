@@ -2,6 +2,8 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
+import Button from "../Button";
+
 import "./styles.css";
 
 import Logo from "../../assets/logo-cc.png";
@@ -19,13 +21,13 @@ function Header() {
         <nav className='topics-section'>
           <ul>
             <li>
-              <Link to='/'>Home</Link>
+              <Button name='Home' link='/' />
             </li>
             <li>
-              <Link to='/tutorial'>Participe</Link>
+              <Button name='Participe' link='/tutorial' />
             </li>
             <li>
-              <Link to='/statistics'>Procure egressos</Link>
+              <Button name='Procure egressos' link='/statistics' />
             </li>
           </ul>
         </nav>

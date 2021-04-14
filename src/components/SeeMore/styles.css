@@ -25,23 +25,12 @@
   align-items: center;
 }
 
-.container-title-seemore {
-  height: 62px;
-  width: 200px;
-
-  margin-left: 20px;
-  align-self: flex-start;
-}
-
-.container-title-seemore h1 {
-  font-size: 18px;
-}
-
 .main-seemore-group {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 .listEgressos {
@@ -104,7 +93,7 @@
   width: 200px;
   height: 50px;
   margin-left: -5vh;
-  background:#886859;
+  background:#f9a826;
   color: #f1f1f1;
   border: none;
   border-radius: 5px;
@@ -113,5 +102,5 @@
 }
 
 .main-seemore-group button:hover {
-  background-color: #886859ea;
+  background-color: #f48400;
 }

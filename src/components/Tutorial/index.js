@@ -54,15 +54,13 @@ function Tutorial() {
 
       <p className='paragraph'>
         Salve as alterações após o preenchimento das informações e, pra finalizar,
-        solicite a sua participação no{" "}
-                <a
-                  href='https://www.linkedin.com/groups/1097807/'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  grupo de egressos
-                </a>
-                 do Curso de Ciência da Computação da UFCG.
+        solicite a sua participação no {" "}
+          <a
+            href='https://www.linkedin.com/groups/1097807/'
+            target='_blank'
+            rel='noreferrer'
+          >grupo de egressos</a>
+        {" "} do Curso de Ciência da Computação da UFCG.
       </p>
     </div>
   );

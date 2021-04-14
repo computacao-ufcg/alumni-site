@@ -1,11 +1,12 @@
 .yellow-button {
-  height: 46px;
-  width: 216px;
+  height: 43px;
+  width: 190px;
   font-size: 20px;
   color: white;
   background-color: var(--color-secundary-lighter);
   border: none;
   transition: 0.2s ease-in-out;
+  box-shadow: 2px 2px 2px #c4c4c4;
 }
 
 .yellow-button:hover {
