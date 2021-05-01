@@ -17,8 +17,7 @@ RUN \
 WORKDIR /root/alumni-site
 
 RUN \
-  npm install && \
-  npm install -g npm@7.11.2
+  npm install
 
 # start app
 CMD ["npm", "start"]
