@@ -1,20 +1,24 @@
 # pull official base image
-FROM node:13.12.0-alpine
+FROM node:16-alpine3.11
+
+ARG ALUMNI_SITE_BRANCH="develop"
 
 # set working directory
-WORKDIR /app
+WORKDIR /root
 
-# add `/app/node_modules/.bin` to $PATH
-ENV PATH /app/node_modules/.bin:$PATH
+RUN \
+  apk update && apk upgrade && \
+  apk add --no-cache git 
 
-# install app dependencies
-COPY package.json ./
-COPY yarn.lock ./
-RUN npm install --silent
-RUN npm install react-scripts@3.4.1 -g --silent
+RUN \
+  git clone https://github.com/computacao-ufcg/alumni-site.git && \
+  (cd alumni-site && git checkout $ALUMNI_SITE_BRANCH) 
 
-# add app
-COPY . ./
+WORKDIR /root/alumni-site
+
+RUN \
+  npm install && \
+  npm install -g npm@7.11.2
 
 # start app
 CMD ["npm", "start"]
