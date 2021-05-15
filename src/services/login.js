@@ -1,10 +1,10 @@
 import { api_AS, api_EAS } from "./api";
 
-const name = "fubica";
-const password = "fubica123";
+const name = "demo";
+const password = "demo";
 
 const handleLogin = async (name, password, publickey) => {
-  let query = "as/tokens";
+  let query = "/tokens";
   const res = await api_EAS
     .post(query, {
       credentials: {
@@ -22,7 +22,7 @@ const handleLogin = async (name, password, publickey) => {
 };
 
 const handleSubmit = async () => {
-  let query = "publicKey";
+  let query = "/publicKey";
   const res = await api_AS.get(query, {});
   if (res) {
     let publickey = res.data.publicKey;
