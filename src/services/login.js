@@ -1,7 +1,7 @@
 import { api_AS, api_EAS } from "./api";
 
-const name = "demo";
-const password = "demo";
+const name = "alumni_site_user";
+const password = "alumni_site_password";
 
 const handleLogin = async (name, password, publickey) => {
   let query = "/tokens";

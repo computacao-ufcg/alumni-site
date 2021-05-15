@@ -1,8 +1,8 @@
 import axios from "axios";
 
 // Starting points
-const EURECA_AS = "http://150.165.15.71:8080/as";
-const ALUMNI_AS = "http://150.165.15.71:8082/eureca";
+const EURECA_AS = "http://eureca.lsd.ufcg.edu.br:8080/";
+const ALUMNI_AS = "http://eureca.lsd.ufcg.edu.br:8082/";
 
 // for Eureca Authentication Service
 const api_EAS = axios.create({
