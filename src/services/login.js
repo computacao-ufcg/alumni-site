@@ -4,7 +4,7 @@ const name = "fubica";
 const password = "fubica123";
 
 const handleLogin = async (name, password, publickey) => {
-  let query = "/tokens";
+  let query = "as/tokens";
   const res = await api_EAS
     .post(query, {
       credentials: {
@@ -22,7 +22,7 @@ const handleLogin = async (name, password, publickey) => {
 };
 
 const handleSubmit = async () => {
-  let query = "/publicKey";
+  let query = "publicKey";
   const res = await api_AS.get(query, {});
   if (res) {
     let publickey = res.data.publicKey;
