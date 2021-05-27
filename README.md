@@ -1,28 +1,12 @@
-## Enviando a aplicação para o DockerHub
+## Criando um container Docker para deploy
 
-<p>A partir da raiz do projeto, digite:</p>
+<p>É necessário adicionar o seu user ao grupo de usuários do docker, usando o seguinte comando e depois reiniciar a máquina.</p>
 
-<code>docker build -t alumni-site:dev .</code>
+<code>sudo usermod -aG docker $USER</code>
 
-<p>Após o sucesso do build, esteja logado com sua conta do DockerHub para enviar a imagem.</p>
+<p>Depois é só executar o <I>script</I> build_tag_push.sh:</p>
 
-<p>Para se conectar ao Docker:</p>
+<code>bash build_tag_push.sh <git-branch> <docker-tag></code>
 
-<code>docker login</code>
-
-<p>Insira suas credenciais e faça o login.</p>
-
-**Criando a tag para a imagem.**
-
-<p>Com a imagem montada, e o login efetuado, execute:</p>
-
-<code>docker images</code>
-
-<p>Recupere o id da imagem alumni-site, pois iremos utilizar no próximo passo.</p>
-
-<code>docker tag "id_imagem" eureca/alumni-site:dev</code>
-
-<code>docker push eureca/alumni-site:dev</code>
-
-- <b>"eureca/"</b> é o nome da organização que o docker enviará/atualizará a imagem.
-- <b>alumni-site:dev</b> é o nome da imagem.
+<p>Onde <git-branch> é o nome do branch que será usado para todos os repositórios e <docker-tag> é o rótulo
+que será colocado na imagem construída e armazenada no Docker Hub.</p>

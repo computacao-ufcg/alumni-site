@@ -1,7 +1,7 @@
 # pull official base image
 FROM node:16-alpine3.11
 
-ARG ALUMNI_SITE_BRANCH="develop"
+ARG ALUMNI_SITE_BRANCH
 
 # set working directory
 WORKDIR /root
