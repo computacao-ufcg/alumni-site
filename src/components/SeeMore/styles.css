@@ -2,7 +2,7 @@
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  overflow: auto;;
+  overflow: auto;
 }
 
 .main-content-seemore {
@@ -19,7 +19,7 @@
   border-radius: 6px;
   opacity: 1;
   padding-bottom: 10vh;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,8 +63,8 @@
   margin-bottom: 10px;
 }
 
-.seemore-input-box div{
-  background-color: #F5F6FA;
+.seemore-input-box div {
+  background-color: #f5f6fa;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,8 +76,8 @@
   border-right: 0;
 }
 
-.seemore-input-box input{
-  background-color: #F5F6FA;
+.seemore-input-box input {
+  background-color: #f5f6fa;
   border: 1px solid #707070;
   border-left: 0;
 
@@ -85,7 +85,7 @@
   height: 5vh;
 }
 
-.seemore-input-box input:focus{
+.seemore-input-box input:focus {
   outline: none;
 }
 
@@ -93,11 +93,11 @@
   width: 200px;
   height: 50px;
   margin-left: -5vh;
-  background:#f9a826;
+  background: #f9a826;
   color: #f1f1f1;
   border: none;
   border-radius: 5px;
-  font-size: 1rem; 
+  font-size: 1rem;
   cursor: pointer;
 }
 

@@ -15,7 +15,7 @@
   font-weight: 100;
   width: 30vw;
   text-align: justify;
-} 
+}
 
 .paragraphs {
   width: 600px;
@@ -81,7 +81,7 @@
 }
 
 #statistics {
-  position:absolute;
+  position: absolute;
   width: 100%;
   height: 100%;
 }
@@ -97,8 +97,13 @@
   font-weight: 300;
 }
 
-#first_item, #second_item, #third_item, #fourth_item,
-#fifth_item, #sixth_item, #seventh_item {
+#first_item,
+#second_item,
+#third_item,
+#fourth_item,
+#fifth_item,
+#sixth_item,
+#seventh_item {
   position: absolute;
 }
 

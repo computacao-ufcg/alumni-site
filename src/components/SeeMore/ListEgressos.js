@@ -28,13 +28,18 @@ function ListEgressos(props) {
           <HeaderCell width={120}>Graduação</HeaderCell>
           <Cell dataKey='graduation' />
         </Column>
-        <Column width={120} >
+        <Column width={120}>
           <HeaderCell>Linkedin</HeaderCell>
           <Cell>
             {rowData => {
               return (
                 <span>
-                  <a target={'_blank'} href={"https://linkedin.com/in/" + rowData.linkedinId}>Link</a>
+                  <a
+                    target={"_blank"}
+                    href={"https://linkedin.com/in/" + rowData.linkedinId}
+                  >
+                    Link
+                  </a>
                 </span>
               );
             }}

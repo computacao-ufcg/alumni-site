@@ -13,9 +13,9 @@ function Tutorial() {
       <h1>Como faço para meus dados aparecerem no sistema Alumni@UFCG?</h1>
       <p className='paragraph'>
         Para isso, basta que você seja egresso do Curso de Ciência da Computação
-        da UFCG (ou do antigo Campus II da UFPB para aqueles formados antes de 2002)
-        e tenha uma conta cadastrada no LinkedIn. Caso não tenha, você pode se
-        cadastrar através do seguinte{" "}
+        da UFCG (ou do antigo Campus II da UFPB para aqueles formados antes de
+        2002) e tenha uma conta cadastrada no LinkedIn. Caso não tenha, você
+        pode se cadastrar através do seguinte{" "}
         <a
           href='https://www.linkedin.com/signup/'
           target='_blank'
@@ -26,11 +26,11 @@ function Tutorial() {
         .
       </p>
       <p className='paragraph'>
-        Uma vez que você tenha uma conta no LinkedIn, basta incluir em seu perfil
-        a informação que você é egresso do curso, como explicado a seguir.
-        Uma vez que você tenha feito <i>login</i> no seu perfil, selecione as opções:{" "}
-        <b>Histórico profissional</b> {">"} <b>Formação acadêmica</b>. Como
-        mostrado na imagem abaixo.
+        Uma vez que você tenha uma conta no LinkedIn, basta incluir em seu
+        perfil a informação que você é egresso do curso, como explicado a
+        seguir. Uma vez que você tenha feito <i>login</i> no seu perfil,
+        selecione as opções: <b>Histórico profissional</b> {">"}{" "}
+        <b>Formação acadêmica</b>. Como mostrado na imagem abaixo.
       </p>
       <img src={AddSectionImage} alt='' />
       <img src={ProfessionalExperienceImage} className='small-image' alt='' />
@@ -43,24 +43,26 @@ function Tutorial() {
       <img src={AcademicEducationImage} alt='' width='500' height='500' />
 
       <p className='paragraph'>
-        Após salvar a formação acadêmica, volte à página de perfil e
-        selecione a opcão:
+        Após salvar a formação acadêmica, volte à página de perfil e selecione a
+        opcão:
         <b> Adicionar seção do perfil</b>. Escolha as opções:{" "}
-        <b>Histórico profissional</b> {">"} <b>Experiência de trabalho</b>. Preencha
-        as informações sobre o seu histórico de experiência de trabalho, como exibido
-        na imagem abaixo.
+        <b>Histórico profissional</b> {">"} <b>Experiência de trabalho</b>.
+        Preencha as informações sobre o seu histórico de experiência de
+        trabalho, como exibido na imagem abaixo.
       </p>
       <img src={ExperienceFormImage} alt='' />
 
       <p className='paragraph'>
-        Salve as alterações após o preenchimento das informações e, pra finalizar,
-        solicite a sua participação no {" "}
-          <a
-            href='https://www.linkedin.com/groups/1097807/'
-            target='_blank'
-            rel='noreferrer'
-          >grupo de egressos</a>
-        {" "} do Curso de Ciência da Computação da UFCG.
+        Salve as alterações após o preenchimento das informações e, pra
+        finalizar, solicite a sua participação no{" "}
+        <a
+          href='https://www.linkedin.com/groups/1097807/'
+          target='_blank'
+          rel='noreferrer'
+        >
+          grupo de egressos
+        </a>{" "}
+        do Curso de Ciência da Computação da UFCG.
       </p>
     </div>
   );

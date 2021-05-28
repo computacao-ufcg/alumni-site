@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 
 export default function Button(props) {
   return (
-    <Link to={ props.link } className='yellow-button'>
-      <button className='yellow-button'>
-        { props.name }
-      </button>
+    <Link to={props.link} className='yellow-button'>
+      <button className='yellow-button'>{props.name}</button>
     </Link>
   );
 }

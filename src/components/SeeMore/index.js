@@ -29,7 +29,9 @@ function SeeMore() {
 
     let query = `match/search/${page}?admission=${admission}&graduation=${graduation}&name=${name}`;
     const res = await api_AS.get(query, {
-      headers: { "Authentication-Token": sessionStorage.getItem("eureca-token") },
+      headers: {
+        "Authentication-Token": sessionStorage.getItem("eureca-token"),
+      },
     });
 
     if (res.status === 200) {
@@ -53,60 +55,79 @@ function SeeMore() {
     setName($iptName.value);
     setAdmission($iptAdmission.value);
     setGraduation($iptGraduation.value);
-    handleProfile(page, $iptName.value, $iptAdmission.value, $iptGraduation.value);
-  }
+    handleProfile(
+      page,
+      $iptName.value,
+      $iptAdmission.value,
+      $iptGraduation.value
+    );
+  };
 
   return (
     <React.Fragment>
-      <div className="main-seemore">
-        <div className="main-container-seemore">
-
-          <div className="main-seemore-group">
-            <div className="seemore-input-boxes">
-              <div className="seemore-input-box">
+      <div className='main-seemore'>
+        <div className='main-container-seemore'>
+          <div className='main-seemore-group'>
+            <div className='seemore-input-boxes'>
+              <div className='seemore-input-box'>
                 <div>
                   <FiSearch size={25} />
                 </div>
-                <input id="ipt-name" type="text" placeholder="Buscar por nome do egresso" />
-              </div>
-
-              <div className="seemore-input-box">
-                <div>
-                  <FiSearch size={25} />
-                </div>
-                <input id="ipt-admission" type="text" placeholder="Buscar por período de admissão" />
-              </div>
-
-              <div className="seemore-input-box">
-                <div>
-                  <FiSearch size={25} />
-                </div>
-                <input id="ipt-graduation" type="text" placeholder="Buscar por período de graduação" />
-              </div>
-            </div>
-            <button onClick={ handleSearch }>Buscar</button>
-          </div>
-
-          {
-            search ? <React.Fragment /> :
-            loading ? <MyLoading /> :
-            data.length === 0 ? <NoDataFound msg="Nenhum dado encontrado." /> :
-              <div className={"listEgressos"}>
-                <ListEgressos listData={ data } />
-                <Pagination
-                  pages={data.totalPages ? data.totalPages : 0}
-                  maxButtons={5}
-                  onSelect={handlePage}
-                  activePage={page + 1}
-                  prev
-                  next
-                  first
-                  last
-                  ellipsis
-                  boundaryLinks
+                <input
+                  id='ipt-name'
+                  type='text'
+                  placeholder='Buscar por nome do egresso'
                 />
               </div>
-          }
+
+              <div className='seemore-input-box'>
+                <div>
+                  <FiSearch size={25} />
+                </div>
+                <input
+                  id='ipt-admission'
+                  type='text'
+                  placeholder='Buscar por período de admissão'
+                />
+              </div>
+
+              <div className='seemore-input-box'>
+                <div>
+                  <FiSearch size={25} />
+                </div>
+                <input
+                  id='ipt-graduation'
+                  type='text'
+                  placeholder='Buscar por período de graduação'
+                />
+              </div>
+            </div>
+            <button onClick={handleSearch}>Buscar</button>
+          </div>
+
+          {search ? (
+            <React.Fragment />
+          ) : loading ? (
+            <MyLoading />
+          ) : data.length === 0 ? (
+            <NoDataFound msg='Nenhum dado encontrado.' />
+          ) : (
+            <div className={"listEgressos"}>
+              <ListEgressos listData={data} />
+              <Pagination
+                pages={data.totalPages ? data.totalPages : 0}
+                maxButtons={5}
+                onSelect={handlePage}
+                activePage={page + 1}
+                prev
+                next
+                first
+                last
+                ellipsis
+                boundaryLinks
+              />
+            </div>
+          )}
         </div>
       </div>
     </React.Fragment>

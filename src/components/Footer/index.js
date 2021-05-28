@@ -37,9 +37,9 @@ function Footer() {
           >
             <i className='bx bxl-github'></i>
           </a>
-          <a 
-            href='mailto:secretaria-ccc@computacao.ufcg.edu.br' 
-            className='home__social-icon' 
+          <a
+            href='mailto:secretaria-ccc@computacao.ufcg.edu.br'
+            className='home__social-icon'
             target='_blank'
             rel='noreferrer'
           >
