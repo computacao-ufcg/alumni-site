@@ -1,4 +1,4 @@
-.no-data-found{
+.no-data-found {
   display: flex;
   flex-direction: row;
 
@@ -10,13 +10,13 @@
   height: 10vh;
 }
 
-.no-data-found svg{
+.no-data-found svg {
   margin-left: 20px;
   height: 30px;
   width: 30px;
 }
 
-.no-data-found p{
+.no-data-found p {
   font-size: 14px;
   color: #886859;
 }

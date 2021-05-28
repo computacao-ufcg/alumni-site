@@ -17,6 +17,7 @@ const api_AS = axios.create({
   baseURL: ALUMNI_AS,
   headers: {
     "Content-type": "application/json",
+    accept: "*/*",
   },
 });
 
