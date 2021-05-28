@@ -25,7 +25,6 @@ const handleSubmit = async () => {
     const query = "/publicKey";
     const res = await api_AS.get(query);
     if (res) {
-      console.log(res);
       let publickey = res.data.publicKey;
       await handleLogin(name, password, publickey);
     } else {
