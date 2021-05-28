@@ -31,7 +31,6 @@ function HomeContainer() {
       });
 
       if (res.status === 200) {
-        console.log(res.data);
         setStatistics(res.data);
         setLoading(false);
       } else {
