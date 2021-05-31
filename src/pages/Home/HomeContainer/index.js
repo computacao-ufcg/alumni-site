@@ -15,13 +15,8 @@ function HomeContainer() {
 
   const year = new Date().getFullYear();
 
-  useEffect(() => {
-    handleSubmit();
-    handleStatistics();
-  }, []);
-
-  const handleStatistics = async () => {
-    try {
+  useEffect(async () => {
+    const handleStatistics = async () => {
       setLoading(true);
       let query = `alumniSiteStatistics?courseName=${courseName}&level=${level}`;
       const res = await api_AS.get(query, {
@@ -34,13 +29,15 @@ function HomeContainer() {
         setStatistics(res.data);
         setLoading(false);
       } else {
+        alert("Cannot fetch data!");
         console.error("Response error");
       }
-    } catch (err) {
       setLoading(false);
-      alert("Cannot fetch data!");
-    }
-  };
+    };
+
+    await handleSubmit();
+    await handleStatistics();
+  }, []);
 
   return (
     <React.Fragment>
