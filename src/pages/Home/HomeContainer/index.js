@@ -9,16 +9,15 @@ import "./styles.css";
 
 function HomeContainer() {
   const [statistics, setStatistics] = useState({});
-  const [courseName, setCourseName] = useState("computing-science");
-  const [level, setLevel] = useState("undergraduate");
   const [loading, setLoading] = useState(true);
 
   const year = new Date().getFullYear();
 
-  useEffect(async () => {
+  useEffect(() => {
     const handleStatistics = async () => {
       setLoading(true);
-      let query = `alumniSiteStatistics?courseName=${courseName}&level=${level}`;
+      let query = `alumniSiteStatistics`;
+      await handleSubmit();
       const res = await api_AS.get(query, {
         headers: {
           "Authentication-Token": sessionStorage.getItem("eureca-token"),
@@ -35,8 +34,7 @@ function HomeContainer() {
       setLoading(false);
     };
 
-    await handleSubmit();
-    await handleStatistics();
+    handleStatistics();
   }, []);
 
   return (
